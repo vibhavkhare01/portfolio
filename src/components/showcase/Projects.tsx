@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router';
-import software from '../../assets/pictures/projects/software.gif';
-import figma from '../../assets/pictures/projects/software.gif';
+import computerBig from '../../assets/icons/computerBig.png';
+import showcaseIcon from '../../assets/icons/showcaseIcon.png';
 
 export interface ProjectsProps {}
 
@@ -70,23 +70,22 @@ const Projects: React.FC<ProjectsProps> = (props) => {
             <h3>& Hobbies</h3>
             <br />
             <p>
-                Click on one of the areas below to check out some of my favorite
-                projects I've done in that field. I spent a lot of time to
-                include a lot of visuals and interactive media to showcase each
-                project. Enjoy!
+                Click on one of the areas below to explore my projects and designs.
+                Each section showcases different aspects of my skills and creativity.
+                Enjoy exploring!
             </p>
             <br />
             <div style={styles.projectLinksContainer}>
                 <ProjectBox
-                    icon={software}
+                    icon={computerBig}
                     iconStyle={styles.computerIcon}
                     title="Software"
                     subtitle="PROJECTS"
                     route="software"
                 />
                 <ProjectBox
-                    icon={figma}
-                    iconStyle={styles.figmaIcon}
+                    icon={showcaseIcon}
+                    iconStyle={styles.showcaseIcon}
                     title="Figma Designs"
                     subtitle="UI/UX PROJECTS"
                     route="figma"
@@ -129,9 +128,9 @@ const styles: StyleSheetCSS = {
         width: 56,
         height: 56,
     },
-    musicIcon: {
-        width: 48,
-        height: 48,
+    showcaseIcon: {
+        width: 56,
+        height: 56,
     },
     arrowIcon: {
         width: 48,

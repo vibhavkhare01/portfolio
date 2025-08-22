@@ -15,10 +15,13 @@ const InteractiveShowcase: React.FC<InteractiveShowcaseProps> = (props) => {
             icon: '🚀',
             color: '#3498db',
             items: [
-                { name: 'Web Development', description: 'React, TypeScript, Node.js', icon: '💻' },
-                { name: 'Data Analysis', description: 'SQL, Excel, Power BI, Google Sheets', icon: '📊' },
-                { name: 'UI/UX Design', description: 'Figma, Adobe Creative Suite', icon: '🎨' },
-                { name: 'Mobile Development', description: 'React Native, Flutter', icon: '📱' }
+                { 
+                    name: 'Background Color Changer', 
+                    description: 'Interactive color changer built with HTML, CSS, JavaScript',
+                    icon: '🎨',
+                    demoLink: 'https://colour-changer-dusky.vercel.app',
+                    gitLink: 'https://github.com/VibhavKhare/color-changer'
+                }
             ]
         },
         {
@@ -27,10 +30,13 @@ const InteractiveShowcase: React.FC<InteractiveShowcaseProps> = (props) => {
             icon: '⚡',
             color: '#e74c3c',
             items: [
-                { name: 'Python', description: 'Data Analysis, Automation, Web Development', icon: '🐍' },
-                { name: 'JavaScript', description: 'React, Node.js, TypeScript', icon: '⚡' },
-                { name: 'SQL & Analytics', description: 'Database Management, Power BI, Excel', icon: '📈' },
-                { name: 'Design Tools', description: 'Figma, Adobe Creative Suite, UI/UX', icon: '🎨' }
+                { name: 'Language', description: 'Python, JavaScript, C ', icon: '⚡' },
+               
+                { name: 'Web Development', description: 'HTML, CSS, JavaScript, React.js', icon: '💻' },
+                { name: 'Data Analysis', description: 'SQL, Excel, Power BI, Tableau, Google Sheets ,Pandas, ', icon: '📊' },
+                { name: 'UI/UX Design', description: 'Figma, Canva,', icon: '🎨' },
+                { name: 'Git & Version Control', description: 'Git, GitHub, GitLab', icon: '🔄' },
+               
             ]
         },
         {
@@ -41,7 +47,7 @@ const InteractiveShowcase: React.FC<InteractiveShowcaseProps> = (props) => {
             items: [
                 { name: 'Student Developer', description: 'Learning & Building Projects', icon: '👨‍🎓' },
                 { name: 'Freelance Work', description: 'Small projects and collaborations', icon: '💡' },
-                { name: 'Open Source', description: 'Contributing to community projects', icon: '🌟' },
+                
                 { name: 'Personal Projects', description: 'Portfolio and learning projects', icon: '🔨' }
             ]
         }
@@ -125,6 +131,26 @@ const InteractiveShowcase: React.FC<InteractiveShowcaseProps> = (props) => {
                                     <div style={styles.itemContent}>
                                         <h3 style={styles.itemTitle}>{item.name}</h3>
                                         <p style={styles.itemDescription}>{item.description}</p>
+                                        {(item as any).demoLink && (
+                                            <div style={styles.projectLinks}>
+                                                <a 
+                                                    href={(item as any).demoLink} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    style={styles.projectLink}
+                                                >
+                                                    🌐 Live Demo
+                                                </a>
+                                                <a 
+                                                    href={(item as any).gitLink} 
+                                                    target="_blank" 
+                                                    rel="noopener noreferrer"
+                                                    style={styles.projectLink}
+                                                >
+                                                    📁 GitHub Code
+                                                </a>
+                                            </div>
+                                        )}
                                     </div>
                                     <motion.div
                                         style={{
@@ -144,7 +170,7 @@ const InteractiveShowcase: React.FC<InteractiveShowcaseProps> = (props) => {
                 <div style={styles.footer}>
                     <div style={styles.stats}>
                         <div style={styles.stat}>
-                            <span style={styles.statNumber}>15+</span>
+                            <span style={styles.statNumber}>5+</span>
                             <span style={styles.statLabel}>Projects</span>
                         </div>
                         <div style={styles.stat}>
@@ -194,80 +220,81 @@ const styles: StyleSheetCSS = {
         overflow: 'hidden'
     },
     sidebar: {
-        width: 250,
+        width: 220,
         backgroundColor: '#f8f9fa',
-        padding: 30,
+        padding: 20,
         borderRight: '1px solid #e0e0e0',
         overflow: 'auto'
     },
     sectionOption: {
         display: 'flex',
         alignItems: 'center',
-        padding: 20,
-        marginBottom: 15,
-        borderRadius: 12,
+        padding: '8px 12px',
+        marginBottom: '8px',
+        borderRadius: '6px',
         cursor: 'pointer',
         transition: 'all 0.3s ease',
         fontWeight: 'bold',
         border: '1px solid #e0e0e0',
-        fontSize: 16
+        fontSize: 12
     },
     sectionIcon: {
-        fontSize: 22,
-        marginRight: 18
+        fontSize: 18,
+        marginRight: 12
     },
     sectionName: {
-        fontSize: 16
+        fontSize: 14
     },
     mainContent: {
         flex: 1,
-        padding: 40,
+        padding: 25,
         overflow: 'auto'
     },
     itemsGrid: {
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-        gap: 30,
+        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+        gap: 20,
         maxWidth: '100%'
     },
     itemCard: {
         backgroundColor: '#ffffff',
         border: '2px solid #e0e0e0',
-        borderRadius: 18,
-        padding: 30,
+        borderRadius: 12,
+        padding: 20,
         position: 'relative',
         overflow: 'hidden',
         transition: 'all 0.3s ease',
-        minHeight: 180
+        minHeight: 140,
+        
     },
     itemIcon: {
-        fontSize: 42,
-        marginBottom: 25
+        fontSize: 32,
+        marginBottom: 15
     },
     itemContent: {
-        marginBottom: 25
+        marginBottom: 15
     },
     itemTitle: {
-        fontSize: 20,
+        fontSize: 16,
         fontWeight: 'bold',
         color: '#2C3E50',
-        margin: '0 0 12px 0'
+        margin: '0 0 8px 0'
     },
     itemDescription: {
-        fontSize: 15,
+        fontSize: 13,
         color: '#7f8c8d',
         margin: 0,
-        lineHeight: 1.6
+        lineHeight: 1.5
     },
     progressBar: {
-        height: 5,
-        borderRadius: 3,
+        height: 3,
+        borderRadius: 2,
         position: 'absolute',
         bottom: 0,
         left: 0
     },
     footer: {
-        padding: 30,
+        padding: 20,
         borderTop: '1px solid #e0e0e0',
         backgroundColor: '#f8f9fa'
     },
@@ -287,6 +314,28 @@ const styles: StyleSheetCSS = {
     statLabel: {
         fontSize: 16,
         color: '#7f8c8d'
+    },
+    projectLinks: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: 15,
+        marginTop: 15,
+        flexDirection: 'column',
+        alignItems: 'center'
+    },
+    projectLink: {
+        color: '#3498db',
+        textDecoration: 'none',
+        fontWeight: 'bold',
+        fontSize: 12,
+        padding: '8px 14px',
+        border: '2px solid #3498db',
+        borderRadius: 6,
+        transition: 'all 0.3s ease',
+        minWidth: '100px',
+        textAlign: 'center',
+        display: 'inline-block',
+        margin: '6px'
     }
 };
 

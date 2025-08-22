@@ -88,3 +88,151 @@ div {
         background-color: white;
     }
 }
+
+/* VibhavKhare-OS Image Fixes */
+.captioned-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.captioned-image {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Project Images */
+.project-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+/* Profile Images */
+.profile-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid #3e9697;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Images */
+.icon-image {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+/* Social Media Icons */
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .captioned-image img {
+        max-width: 90%;
+    }
+    
+    .profile-image {
+        max-width: 200px;
+    }
+    
+    .project-image {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .captioned-image img {
+        max-width: 95%;
+    }
+    
+    .profile-image {
+        max-width: 150px;
+    }
+}
+
+/* Improved spacing for skills and projects */
+.site-page-content h1 {
+    margin-bottom: 16px;
+}
+
+.site-page-content h3 {
+    margin-bottom: 24px;
+}
+
+.site-page-content p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}
+
+.text-block {
+    margin-bottom: 32px;
+}
+
+/* Project links spacing */
+.projectLinksContainer > div {
+    margin-bottom: 32px;
+}
+
+/* Skills section spacing */
+.skills-section {
+    margin-bottom: 40px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Contact form improvements */
+.contact-form {
+    margin-top: 32px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Logo and branding improvements */
+.os-logo {
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Voice/audio improvements */
+.audio-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.volume-control {
+    width: 100px;
+    height: 6px;
+    background: #e0e0e0;
+    border-radius: 3px;
+    cursor: pointer;
+}

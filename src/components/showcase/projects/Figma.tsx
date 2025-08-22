@@ -1,170 +1,197 @@
 import React from 'react';
 
-export interface FigmaProjectsProps {}
+export interface FigmaProps {}
 
-const FigmaProjects: React.FC<FigmaProjectsProps> = (props) => {
+const Figma: React.FC<FigmaProps> = () => {
     return (
         <div className="site-page-content">
             <h1>Figma Designs</h1>
-            <h3>& UI/UX Projects</h3>
+            <h3>UI/UX Projects</h3>
             <br />
-            <p>
-                Welcome to my UI/UX design showcase! Here you'll find my Figma designs
-                and user interface projects. I'm passionate about creating intuitive,
-                beautiful, and functional user experiences.
-            </p>
-            <br />
-            <div style={styles.projectsContainer}>
-                <div style={styles.projectCard}>
-                    <h3 style={styles.projectTitle}>Portfolio Website Design</h3>
-                    <p style={styles.projectDescription}>
-                        Modern portfolio website design with clean aesthetics and smooth interactions.
-                        Focused on user experience and visual hierarchy.
-                    </p>
-                    <div style={styles.projectTags}>
-                        <span style={styles.tag}>Figma</span>
-                        <span style={styles.tag}>UI/UX</span>
-                        <span style={styles.tag}>Web Design</span>
-                    </div>
-                </div>
+            <div className="text-block">
+                <p>
+                    Here are some of my UI/UX design projects created using Figma. 
+                    I focus on creating intuitive, user-friendly interfaces that combine 
+                    aesthetics with functionality.
+                </p>
+                <br />
+                <p>
+                    My design approach emphasizes user experience, accessibility, and 
+                    modern design principles while maintaining consistency and brand identity.
+                </p>
+            </div>
 
+            <div style={styles.projectSection}>
+                <h2>Portfolio Website Design</h2>
                 <div style={styles.projectCard}>
-                    <h3 style={styles.projectTitle}>Mobile App Interface</h3>
-                    <p style={styles.projectDescription}>
-                        Mobile application interface design with intuitive navigation
-                        and modern design patterns.
-                    </p>
-                    <div style={styles.projectTags}>
-                        <span style={styles.tag}>Figma</span>
-                        <span style={styles.tag}>Mobile</span>
-                        <span style={styles.tag}>App Design</span>
-                    </div>
-                </div>
-
-                <div style={styles.projectCard}>
-                    <h3 style={styles.projectTitle}>Dashboard Design</h3>
-                    <p style={styles.projectDescription}>
-                        Analytics dashboard with data visualization and user-friendly
-                        interface for complex information display.
-                    </p>
-                    <div style={styles.projectTags}>
-                        <span style={styles.tag}>Figma</span>
-                        <span style={styles.tag}>Dashboard</span>
-                        <span style={styles.tag}>Analytics</span>
-                    </div>
-                </div>
-
-                <div style={styles.projectCard}>
-                    <h3 style={styles.projectTitle}>E-commerce UI</h3>
-                    <p style={styles.projectDescription}>
-                        Online shopping interface with product showcases, cart management,
-                        and seamless checkout experience.
-                    </p>
-                    <div style={styles.projectTags}>
-                        <span style={styles.tag}>Figma</span>
-                        <span style={styles.tag}>E-commerce</span>
-                        <span style={styles.tag}>Shopping</span>
+                    <div style={styles.projectInfo}>
+                        <h3>VibhavKhare-OS Interface Design</h3>
+                        <p>
+                            Complete UI/UX design for the Windows 98-style portfolio website. 
+                            Includes desktop layout, window management system, start menu design, 
+                            and responsive components that maintain the retro aesthetic.
+                        </p>
+                        <div style={styles.techStack}>
+                            <span style={styles.techTag}>Figma</span>
+                            <span style={styles.techTag}>UI Design</span>
+                            <span style={styles.techTag}>UX Design</span>
+                            <span style={styles.techTag}>Prototyping</span>
+                        </div>
+                        <div style={styles.designFeatures}>
+                            <h4>Design Features:</h4>
+                            <ul style={styles.featureList}>
+                                <li>Authentic Windows 98 color scheme and typography</li>
+                                <li>Interactive window management system</li>
+                                <li>Responsive desktop layout</li>
+                                <li>Custom icon set and visual elements</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div style={styles.skillsSection}>
-                <h2>Design Skills</h2>
-                <div style={styles.skillsGrid}>
-                    <div style={styles.skillItem}>
-                        <span style={styles.skillIcon}>🎨</span>
-                        <span style={styles.skillName}>Figma</span>
-                    </div>
-                    <div style={styles.skillItem}>
-                        <span style={styles.skillIcon}>📱</span>
-                        <span style={styles.skillName}>Mobile Design</span>
-                    </div>
-                    <div style={styles.skillItem}>
-                        <span style={styles.skillIcon}>💻</span>
-                        <span style={styles.skillName}>Web Design</span>
-                    </div>
-                    <div style={styles.skillItem}>
-                        <span style={styles.skillIcon}>🎯</span>
-                        <span style={styles.skillName}>UX Research</span>
-                    </div>
-                    <div style={styles.skillItem}>
-                        <span style={styles.skillIcon}>📊</span>
-                        <span style={styles.skillName}>Prototyping</span>
-                    </div>
-                    <div style={styles.skillItem}>
-                        <span style={styles.skillIcon}>🎭</span>
-                        <span style={styles.skillName}>Visual Design</span>
+            <div style={styles.projectSection}>
+                <h2>Data Dashboard Design</h2>
+                <div style={styles.projectCard}>
+                    <div style={styles.projectInfo}>
+                        <h3>Business Analytics Interface</h3>
+                        <p>
+                            Comprehensive dashboard design for data visualization and business analytics. 
+                            Focuses on clear data presentation, intuitive navigation, and actionable insights.
+                        </p>
+                        <div style={styles.techStack}>
+                            <span style={styles.techTag}>Figma</span>
+                            <span style={styles.techTag}>Dashboard Design</span>
+                            <span style={styles.techTag}>Data Visualization</span>
+                            <span style={styles.techTag}>User Research</span>
+                        </div>
+                        <div style={styles.designFeatures}>
+                            <h4>Key Components:</h4>
+                            <ul style={styles.featureList}>
+                                <li>Interactive charts and graphs</li>
+                                <li>Real-time data display widgets</li>
+                                <li>Customizable dashboard layouts</li>
+                                <li>Mobile-responsive design</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <div style={styles.projectSection}>
+                <h2>Mobile App Design</h2>
+                <div style={styles.projectCard}>
+                    <div style={styles.projectInfo}>
+                        <h3>Responsive Mobile Applications</h3>
+                        <p>
+                            Mobile-first design approach for various applications, focusing on 
+                            touch-friendly interfaces, gesture navigation, and optimal user experience 
+                            across different screen sizes.
+                        </p>
+                        <div style={styles.techStack}>
+                            <span style={styles.techTag}>Figma</span>
+                            <span style={styles.techTag}>Mobile Design</span>
+                            <span style={styles.techTag}>Responsive Design</span>
+                            <span style={styles.techTag}>User Testing</span>
+                        </div>
+                        <div style={styles.designFeatures}>
+                            <h4>Design Principles:</h4>
+                            <ul style={styles.featureList}>
+                                <li>Touch-friendly interface elements</li>
+                                <li>Consistent design language</li>
+                                <li>Accessibility considerations</li>
+                                <li>Performance-optimized layouts</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style={styles.projectSection}>
+                <h2>Web Application Design</h2>
+                <div style={styles.projectCard}>
+                    <div style={styles.projectInfo}>
+                        <h3>Modern Web Interfaces</h3>
+                        <p>
+                            Contemporary web application designs that balance aesthetics with functionality. 
+                            Emphasis on clean layouts, intuitive navigation, and engaging user interactions.
+                        </p>
+                        <div style={styles.techStack}>
+                            <span style={styles.techTag}>Figma</span>
+                            <span style={styles.techTag}>Web Design</span>
+                            <span style={styles.techTag}>Component Design</span>
+                            <span style={styles.techTag}>Design Systems</span>
+                        </div>
+                        <div style={styles.designFeatures}>
+                            <h4>Design Elements:</h4>
+                            <ul style={styles.featureList}>
+                                <li>Component-based design system</li>
+                                <li>Consistent color palette and typography</li>
+                                <li>Interactive elements and micro-interactions</li>
+                                <li>Cross-browser compatibility considerations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style={styles.footer}>
+                <p>
+                    I'm passionate about creating designs that not only look great but also 
+                    provide excellent user experiences. Feel free to reach out for collaboration 
+                    on design projects!
+                </p>
             </div>
         </div>
     );
 };
 
 const styles: StyleSheetCSS = {
-    projectsContainer: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-        gap: 25,
-        marginBottom: 40
+    projectSection: {
+        marginBottom: 40,
     },
     projectCard: {
-        backgroundColor: '#ffffff',
-        border: '2px solid #e0e0e0',
-        borderRadius: 12,
-        padding: 25,
-        transition: 'all 0.3s ease',
-        cursor: 'pointer'
+        backgroundColor: '#f8f9fa',
+        border: '1px solid #e9ecef',
+        borderRadius: 8,
+        padding: 20,
+        marginTop: 15,
+        boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
     },
-    projectTitle: {
-        color: '#2C3E50',
-        marginBottom: 12,
-        fontSize: 20
+    projectInfo: {
+        flexDirection: 'column',
     },
-    projectDescription: {
-        color: '#7f8c8d',
-        lineHeight: 1.6,
-        marginBottom: 15
-    },
-    projectTags: {
-        display: 'flex',
+    techStack: {
+        marginTop: 15,
         flexWrap: 'wrap',
-        gap: 8
+        gap: 8,
     },
-    tag: {
-        backgroundColor: '#3498db',
+    techTag: {
+        backgroundColor: '#3e9697',
         color: 'white',
         padding: '4px 12px',
-        borderRadius: 15,
+        borderRadius: 16,
         fontSize: 12,
-        fontWeight: 'bold'
+        fontFamily: 'MSSerif',
     },
-    skillsSection: {
-        marginTop: 40
+    designFeatures: {
+        marginTop: 20,
     },
-    skillsGrid: {
-        display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(150px, 1fr))',
-        gap: 20,
-        marginTop: 20
+    featureList: {
+        marginTop: 10,
+        paddingLeft: 20,
     },
-    skillItem: {
-        display: 'flex',
-        alignItems: 'center',
-        padding: 15,
-        backgroundColor: '#f8f9fa',
-        borderRadius: 8,
-        border: '1px solid #e0e0e0'
-    },
-    skillIcon: {
-        fontSize: 24,
-        marginRight: 12
-    },
-    skillName: {
+    featureListItem: {
+        marginBottom: 8,
         fontSize: 14,
-        fontWeight: 'bold',
-        color: '#2C3E50'
-    }
+        fontFamily: 'MSSerif',
+    },
+    footer: {
+        marginTop: 40,
+        textAlign: 'center',
+        fontStyle: 'italic',
+        color: '#6c757d',
+    },
 };
 
-export default FigmaProjects; 
+export default Figma; 

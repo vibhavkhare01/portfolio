@@ -66,12 +66,12 @@ const Button: React.FC<ButtonProps> = ({ icon, text, onClick }) => {
 
 const styles: StyleSheetCSS = {
     outerBorder: {
-        border: `1px solid ${Colors.black}`,
+        border: `2px solid ${Colors.black}`,
         borderTopColor: Colors.white,
         borderLeftColor: Colors.white,
         background: Colors.lightGray,
-
         cursor: 'pointer',
+        margin: '1px',
     },
     innerBorder: {
         border: `1px solid ${Colors.darkGray}`,

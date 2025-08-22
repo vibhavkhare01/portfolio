@@ -8,37 +8,38 @@ export interface CreditsProps extends WindowAppProps {}
 const CREDITS = [
     {
         title: 'Engineering & Design',
-        rows: [['Henry Heffernan', 'All']],
+        rows: [['Vibhav Khare', 'All']],
     },
     {
-        title: 'Modeling & Texturing',
+        title: 'Original OS Design',
         rows: [
-            ['Henry Heffernan', 'Texturing, Composition, & UV'],
-            ['Mickael Boitte', 'Computer Model'],
-            ['Sean Nicolas', 'Environment Models'],
+            ['Vibhav Khare', 'Original OS Design'],
+            ['Windows 11', 'Microsoft Corporation'],
+            ['React & TypeScript', 'Open Source Community'],
         ],
     },
     {
-        title: 'Sound Design',
+        title: 'Development & Customization',
         rows: [
-            ['Henry Heffernan', 'Mixing, Composition, & Foley'],
-            ['Sound Cassette', 'Office Ambience'],
-            ['Windows 95 Startup Sound', 'Microsoft'],
+            ['Vibhav Khare', 'OS Rebranding & Customization'],
+            ['System Information', 'Network Configuration'],
+            ['Portfolio Content', 'Personal Projects & Experience'],
         ],
     },
     {
         title: 'Special Thanks',
         rows: [
-            ['Bruno Simon', 'SimonDev'],
-            ['Lorelei Kravinsky', 'Scott Bass'],
-            ['Trey Briccetti', 'Mom, Dad & Angela'],
+            ['WebMobi360', 'Internship Opportunity'],
+            ['Malwa Institute', 'Education & Support'],
+            ['TechNerds Team', 'Hackathon Collaboration'],
         ],
     },
     {
-        title: 'Inspiration',
+        title: 'Inspiration & Resources',
         rows: [
-            ['Bruno Simon', 'Jesse Zhou'],
-            ['Pink Yellow', 'Vivek Patel'],
+            ['Henry Heffernan', 'Original Portfolio Design'],
+            ['Windows 98', 'Classic OS Interface'],
+            ['Open Source Community', 'React & TypeScript'],
         ],
     },
 ];
@@ -78,7 +79,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
             closeWindow={props.onClose}
             onInteract={props.onInteract}
             minimizeWindow={props.onMinimize}
-            bottomLeftText={'© Copyright 2022 Henry Heffernan'}
+            bottomLeftText={'© Copyright 2025 VibhavKhare Technologies'}
         >
             <div
                 onMouseDown={nextSlide}
@@ -86,7 +87,7 @@ const Credits: React.FC<CreditsProps> = (props) => {
                 style={styles.credits}
             >
                 <h2>Credits</h2>
-                <p>henryheffernan.com, 2022</p>
+                <p>VibhavKhare-OS, 2025</p>
                 <br />
                 <br />
                 <br />

@@ -8,6 +8,7 @@ import Toolbar from './Toolbar';
 import DesktopShortcut, { DesktopShortcutProps } from './DesktopShortcut';
 import { IconName } from '../../assets/icons';
 import Credits from '../applications/Credits';
+import SystemInfo from './SystemInfo';
 
 export interface DesktopProps {}
 
@@ -35,9 +36,15 @@ const APPLICATIONS: {
     },
     games: {
         key: 'games',
-        name: 'Game Showcase',
+        name: 'Interactive Projects',
         shortcutIcon: 'windowGameIcon',
         component: GameShowcase,
+    },
+    systemInfo: {
+        key: 'systemInfo',
+        name: 'System Information',
+        shortcutIcon: 'computerBig',
+        component: SystemInfo,
     },
     credits: {
         key: 'credits',

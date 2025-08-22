@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Colors from '../../constants/colors';
+import { OS_CONFIG } from '../../constants/osConfig';
 import { Icon } from '../general';
+import NetworkStatus from './NetworkStatus';
 // import { } from '../general';
 // import Home from '../site/Home';
 // import Window from './Window';
@@ -96,7 +98,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
                 >
                     <div style={styles.startWindowInner}>
                         <div style={styles.verticalStartContainer}>
-                            <p style={styles.verticalText}>HeffernanOS</p>
+                            <p style={styles.verticalText}>{OS_CONFIG.name}</p>
                         </div>
                         <div style={styles.startWindowContent}>
                             <div style={styles.startMenuSpace} />
@@ -184,6 +186,7 @@ const Toolbar: React.FC<ToolbarProps> = ({
                     <Icon style={styles.volumeIcon} icon="volumeOn" />
                     <p style={styles.timeText}>{time}</p>
                 </div>
+                <NetworkStatus />
             </div>
         </div>
     );
